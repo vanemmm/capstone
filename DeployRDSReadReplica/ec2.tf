@@ -3,7 +3,7 @@ resource "aws_instance" "wordpress_us_east_1a" {
   instance_type          = var.instance_type
   subnet_id              = var.subnet_ids[0]
   vpc_security_group_ids = [aws_security_group.webserver_sg.id]
-  iam_instance_profile   = aws_iam_instance_profile.student_ec2_instance_profile.name
+  #iam_instance_profile   = aws_iam_instance_profile.student_ec2_instance_profile.name
   associate_public_ip_address = false
   tags = {
     Name = "WordPress Instance 1"
@@ -23,7 +23,7 @@ resource "aws_instance" "bastion_host" {
   instance_type          = var.instance_type
   subnet_id              = var.subnet_ids[1]
   vpc_security_group_ids = [aws_security_group.bastion_sg.id]
-  iam_instance_profile   = aws_iam_instance_profile.student_ec2_instance_profile.name
+  #iam_instance_profile   = aws_iam_instance_profile.student_ec2_instance_profile.name
   associate_public_ip_address = true
   tags = {
     Name = "Bastion Host"
@@ -42,7 +42,7 @@ resource "aws_instance" "wordpress_us_east_1b" {
   instance_type          = var.instance_type
   subnet_id              = var.subnet_ids[2]
   vpc_security_group_ids = [aws_security_group.webserver_sg.id]
-  iam_instance_profile   = aws_iam_instance_profile.student_ec2_instance_profile.name
+  #iam_instance_profile   = aws_iam_instance_profile.student_ec2_instance_profile.name
   associate_public_ip_address = false
   tags = {
     Name = "WordPress Instance 2"

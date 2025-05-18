@@ -3,7 +3,7 @@ resource "aws_launch_configuration" "wordpress_launch_config" {
   image_id      = var.ami_id
   instance_type = var.instance_type
   security_groups = [aws_security_group.webserver_sg.id]
-  iam_instance_profile = aws_iam_instance_profile.student_ec2_instance_profile.name
+#  iam_instance_profile = aws_iam_instance_profile.student_ec2_instance_profile.name
 
   lifecycle {
     create_before_destroy = true

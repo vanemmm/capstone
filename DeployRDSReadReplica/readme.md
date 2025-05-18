@@ -107,7 +107,7 @@ what will need to be added off of first glance includes:
 # load balancer                                          
         have yet to add
 
-# auto scailing group                                   
+# auto scaling group                                   
 
 # db                                                    
         probably will need but should double check how it is set up in order to replicate it

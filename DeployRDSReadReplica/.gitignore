@@ -1,0 +1,10 @@
+terraform.tfstate
+terraform.tfstate.*
+.terraform.lock.hcl
+.terraform/
+iam_credentials.txt
+login_url.txt
+plainpass.txt
+
+terraform.tfvars
+*.auto.tfvars
